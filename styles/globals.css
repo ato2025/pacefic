@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: outfit;
+  src: url(./../public/fonts/Outfit-Regular.ttf);
+}
+body{
+  overflow-x: hidden !important;
+  width: 100vw;
+  background-color: var(--layoutBg);
+}
+*{
+  font-family: outfit ;
+}
+.cp{
+  cursor: pointer;
+}
+
+.fCenter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.t05{
+  transition: all .5s;
+}
+.t07{
+  transition: all .7s;
+}
+.t2{
+  transition: all 2s;
+}
+:root {
+  --color-bg-main: #1A1A1A; 
+  --color-bg-subMain: #3f3e3e;
+  --main-purple:#7762CC;
+  --text-primary:#1F2227;
+  --text-secondary:#757A82;
+  --color-disable:#757A82;
+  --layoutBg:#F3F4F5;
+  --modalBg:#323842;
+  --borderColor:#7762CC;
+}
+
+[data-theme='dark'] {
+  --foreground: rgb(184, 186, 58);
+  --main-purple:#957BFF;
+  --text-primary:#F3F4F5;
+  --text-secondary:#D4D6D9;
+  --color-disable:#757A82;
+  --layoutBg:#23272E;
+  --modalBg:#323842;
+  --borderColor:#ffffff;
+}
+
+.darkBorder{
+  border: .5px solid #FFFFFF;
+  border-radius: 16px;
+}
+.lightBorder{
+  border: .5px solid #4071e571;
+  border-radius: 16px;
+}
+.navbarBgLight{
+  backdrop-filter: blur(10px);
+  background-color: rgba(232, 232, 232, 0.107);
+
+}
+.navbarBgModal{
+  backdrop-filter: blur(10px);
+  background-color: rgba(68, 67, 67, 0.555);
+
+}
+.navbarBgDark{
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.341);
+  /* background-image: url(./../public/images/nav/gradient-bg.svg); */
+}
+.homeWhyUsTitleBox{
+  background:url(./../public/home/whyChooseUS.png) ;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: 150px -100px; */
+}
+.homeWhyUsTitleBoxLight{
+  background:url(./../public/home/whyChooseUSLight.png) ;
+  background-size: cover;
+  background-position: 50% 50%;
+  /* background-position: 150px -100px; */
+}
+.galaxyBg{
+  background:url(./../public/home/galaxy.png) ;
+  background-size: cover;
+  background-position: 550px -300px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #615f5f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ecececda;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #020202;
+}
+
+.homeHowToGetService{
+  background: linear-gradient(337deg, #DED6FF -78.19%, #C8B1E4 41.6%, rgba(155, 114, 207, 0.93) 122.68%);
+}
+.ballWrapper:hover > .smallerBall{
+  background-color: red;
+}
+.homeGetOurService{
+  background: url(./../public/home/2151541877.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homeGetOurService1{
+  background: url(./../public/titleBg1.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.homeGetOurService2{
+  background: url(./../public/titleBg2.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.heroSection{
+  background: url(./../public/home/homeBanner.png);
+  background-size: cover;
+}
+.heroSection2{
+  background: url(./../public/home/homeBanner3.png);
+  background-size: cover;
+}
